@@ -34,30 +34,30 @@ public class DashboardPage {
 
     //проверка баланса первой карты после пополнения
     void CheckMoneyFirstAfterReplenishment() {
-      balanceFirst.shouldHave(exactText("**** **** **** 0001, баланс: 10500 р.\n" +
-              "Пополнить"));
+        balanceFirst.shouldHave(exactText("**** **** **** 0001, баланс: 10500 р.\n" +
+                "Пополнить"));
 
     }
 
 
     //проверка баланса второй карты после пополнения
     void CheckMoneySecondAfterReplenishment() {
-      balanceSecond.shouldHave(exactText("**** **** **** 0002, баланс: 10500 р.\n" +
-              "Пополнить"));
+        balanceSecond.shouldHave(exactText("**** **** **** 0002, баланс: 10500 р.\n" +
+                "Пополнить"));
 
     }
 
     //проверка баланса первой карты после снятия
     void CheckMoneyFirstAfterRemoval() {
-      balanceFirst.shouldHave(exactText("**** **** **** 0001, баланс: 9500 р.\n" +
-              "Пополнить"));
+        balanceFirst.shouldHave(exactText("**** **** **** 0001, баланс: 9500 р.\n" +
+                "Пополнить"));
 
     }
 
     //проверка баланса второй карты после снятия
     void CheckMoneySecondAfterRemoval() {
-      balanceSecond.shouldHave(exactText("**** **** **** 0002, баланс: 9500 р.\n" +
-              "Пополнить"));
+        balanceSecond.shouldHave(exactText("**** **** **** 0002, баланс: 9500 р.\n" +
+                "Пополнить"));
 
     }
 

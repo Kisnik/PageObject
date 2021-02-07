@@ -26,8 +26,6 @@ public class PageObjectTest {
         dashBoardTransferRollBack.TransferSecondCard(DataHelper.getMoneyTransferSecond());
 
 
-
-
     }
 
     @Test
@@ -45,9 +43,7 @@ public class PageObjectTest {
         dashBoardTransferRollBack.TransferFirstCard(DataHelper.getMoneyTransferFirst());
 
 
-
     }
-
 
 
 }
