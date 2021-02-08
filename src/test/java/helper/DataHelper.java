@@ -1,3 +1,5 @@
+package helper;
+
 import lombok.Value;
 
 public class DataHelper {

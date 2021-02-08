@@ -1,4 +1,7 @@
+package pages;
+
 import com.codeborne.selenide.SelenideElement;
+import helper.DataHelper;
 import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Condition.visible;

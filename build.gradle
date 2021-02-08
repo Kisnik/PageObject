@@ -17,7 +17,8 @@ dependencies {
     testImplementation 'com.codeborne:selenide:5.11.0'
     testImplementation 'org.slf4j:slf4j-simple:1.7.30'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 
 
 

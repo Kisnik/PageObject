@@ -1,4 +1,4 @@
-
+package pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -33,7 +33,7 @@ public class DashboardPage {
     }
 
     //проверка баланса первой карты после пополнения
-    void CheckMoneyFirstAfterReplenishment() {
+    public void CheckMoneyFirstAfterReplenishment() {
         balanceFirst.shouldHave(exactText("**** **** **** 0001, баланс: 10500 р.\n" +
                 "Пополнить"));
 
@@ -41,21 +41,21 @@ public class DashboardPage {
 
 
     //проверка баланса второй карты после пополнения
-    void CheckMoneySecondAfterReplenishment() {
+    public void CheckMoneySecondAfterReplenishment() {
         balanceSecond.shouldHave(exactText("**** **** **** 0002, баланс: 10500 р.\n" +
                 "Пополнить"));
 
     }
 
     //проверка баланса первой карты после снятия
-    void CheckMoneyFirstAfterRemoval() {
+    public void CheckMoneyFirstAfterRemoval() {
         balanceFirst.shouldHave(exactText("**** **** **** 0001, баланс: 9500 р.\n" +
                 "Пополнить"));
 
     }
 
     //проверка баланса второй карты после снятия
-    void CheckMoneySecondAfterRemoval() {
+    public void CheckMoneySecondAfterRemoval() {
         balanceSecond.shouldHave(exactText("**** **** **** 0002, баланс: 9500 р.\n" +
                 "Пополнить"));
 
