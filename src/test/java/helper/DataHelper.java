@@ -31,26 +31,14 @@ public class DataHelper {
 
     //объект для перевода на первую карту
     @Value
-    public static class MoneyTransferFirstCard {
-        private String amountForFirst;
-        private String cardNumberSecond;
+    public static class MoneyTransfer {
+        private String amount;
+        private String cardNumber;
 
     }
 
-    public static MoneyTransferFirstCard getMoneyTransferFirst() {
-        return new MoneyTransferFirstCard("500", "5559000000000002");
-    }
-
-    //объект для перевода на вторую карту
-    @Value
-    public static class MoneyTransferSecondCard {
-        private String amountForSecond;
-        private String cardNumberFirst;
-
-    }
-
-    public static MoneyTransferSecondCard getMoneyTransferSecond() {
-        return new MoneyTransferSecondCard("500", "5559000000000001");
+    public static MoneyTransfer getMoneyTransfer(String money, String card) {
+        return new MoneyTransfer(money, card);
     }
 
 }

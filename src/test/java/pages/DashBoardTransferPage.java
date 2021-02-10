@@ -18,22 +18,12 @@ public class DashBoardTransferPage {
         heading.shouldBe(visible);
     }
 
-    //пополнение первой карты
-    public DashboardPage TransferFirstCard(DataHelper.MoneyTransferFirstCard moneyTransferFirstCard) {
+    //пополнение карты
+    public DashboardPage transferCard(DataHelper.MoneyTransfer moneyTransfer) {
         amount.sendKeys(Keys.chord(Keys.CONTROL, "A"), Keys.DELETE);
-        amount.setValue(moneyTransferFirstCard.getAmountForFirst());
+        amount.setValue(moneyTransfer.getAmount());
         from.sendKeys(Keys.chord(Keys.CONTROL, "A"), Keys.DELETE);
-        from.setValue(moneyTransferFirstCard.getCardNumberSecond());
-        buttonAdd.click();
-        return new DashboardPage();
-    }
-
-    //пополнение второй карты
-    public DashboardPage TransferSecondCard(DataHelper.MoneyTransferSecondCard moneyTransferSecondCard) {
-        amount.sendKeys(Keys.chord(Keys.CONTROL, "A"), Keys.DELETE);
-        amount.setValue(moneyTransferSecondCard.getAmountForSecond());
-        from.sendKeys(Keys.chord(Keys.CONTROL, "A"), Keys.DELETE);
-        from.setValue(moneyTransferSecondCard.getCardNumberFirst());
+        from.setValue(moneyTransfer.getCardNumber());
         buttonAdd.click();
         return new DashboardPage();
     }
